@@ -1,0 +1,1746 @@
+@font-face {
+    font-family: UbuntuM;
+    src: url("../fonts/ubuntu/Ubuntu-M.ttf");
+}
+
+@font-face {
+    font-family: UbuntuB;
+    src: url('../fonts/UbuntuB.woff2');
+}
+
+@font-face {
+    font-family: UbuntuR;
+    src: url('../fonts/UbuntuR.woff2');
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    color: rgba(66, 69, 81, 1);
+    position: relative;
+}
+.login_register{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.navbar,
+header,
+.call_action {
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: UbuntuB;
+    font-size: 14px;
+    background-color: white;
+    color: #424551;
+    max-width: 1230px;
+}
+
+header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 100%;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.nav_phone_text div:nth-child(2),
+.nav_email_text div:nth-child(2) {
+    font-family: UbuntuR;
+    font-size: 18px;
+}
+
+.call_action {
+    gap: 9px;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.nav_phone,
+.nav_email {
+    display: block;
+}
+
+main {
+    height: 1000px;
+}
+
+.scroller {
+    position: relative;
+    color: white;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/slider/slider1.jfif') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background 0.5s;
+}
+
+.scroller_header {
+    font-size: 64px;
+    font-family: UbuntuB;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 100px;
+}
+
+.logo{
+    padding-left:20px;
+}
+
+.scroller_header div {
+    max-width: 510px;
+}
+
+.scroller_header div span {
+    color: #FF5A30;
+}
+
+.scroller_desc {
+    font-family: UbuntuR;
+    font-size: 18px;
+    padding-top: 20px;
+    line-height: 23px;
+}
+
+.scroller_desc div {
+    max-width: 510px;
+    padding-right: 30px;
+}
+
+.scroller_header,
+.scroller_buttons,
+.scroller_desc,
+.scroller_tabs {
+    max-width: 1330px;
+    margin: auto;
+    padding-left: 80px;
+}
+
+.scroller_buttons div {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: space-between;
+    width: 520px;
+}
+
+
+
+.transparent_button,
+.orange_button {
+    height: 52px;
+    border-radius: 4px;
+    font-family: UbuntuB;
+    font-size: 16px;
+    background: none;
+    border-color: white;
+    color: white;
+    box-shadow: none;
+    border-style: solid;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.transparent_button:active,
+.orange_button:active {
+    border-style: solid;
+}
+
+.transparent_button:hover,
+.orange_button:hover {
+    transition: all 0.1s ease-in-out;
+}
+.orange_button:hover {
+    background-color: #Fc3300;
+}
+.transparent_button:hover {
+    background-color: #FF5A30;
+    color: white;
+}
+.orange_button {
+    height: 54px;
+    border-color: #FF5A30;
+    background-color: #FF5A30;
+}
+
+.scroller_tabs {
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    margin-top: 180px;
+    padding-bottom: 130px;
+    justify-content: left;
+    align-items: center;
+}
+
+.scroller_tab_item{
+    opacity: 0.6;
+}
+
+.scroller_tab_item:first-of-type{
+    opacity: 1;
+}
+
+.scroller_tab_number {
+    color: white;
+    font-family: UbuntuB;
+    margin-bottom: 12px;
+    line-height: 150%;
+    font-size:25px;
+}
+
+.scroller_tab_rect {
+    background-color: white;
+    width:178px;
+    height:2px;
+}
+
+.our-services-article {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+        /* Adjust the opacity here */
+        url('../img/our-services-background.jfif') no-repeat center center;
+    background-size: cover;
+}
+
+.projects_article,
+.info-block,
+.ask_us_article {
+    text-align: center;
+    font-family: UbuntuB;
+    max-width: 1230px;
+    margin: auto;
+}
+
+.projects_article>div:first-of-type {
+    max-width: 720px;
+
+}
+
+.projects_article {
+    text-align: left;
+    margin-top: 120px;
+    border-radius: 4px;
+}
+
+.projects_article>div {
+    font-size: 48px;
+    font-family: UbuntuB;
+    padding-left: 30px;
+    padding-bottom: 60px;
+}
+
+.projects_article>div:nth-of-type(2) {
+    margin-bottom: 60px;
+}
+
+.projects_article .service-flex>div {
+    width: 390px;
+    height: 440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+.projects_article .service-flex div {
+    background-color: white;
+    width: 390px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: auto;
+}
+
+.projects_article .service-flex div div div {
+    height: 50px;
+}
+
+.projects_article .service-flex div div:nth-child(1) {
+    font-size: 25px;
+    padding-top: 10px;
+    ;
+}
+
+.projects_article .service-flex div div:nth-child(2) {
+
+    color: #787A80;
+}
+
+.projects_article .service-flex {
+    gap: 0px;
+    justify-content: space-around;
+    padding-left: 0px;
+}
+
+.projects_article .service-flex>div:nth-of-type(1) {
+    background-image: url("../img/red-finger-building.png");
+}
+
+.projects_article .service-flex>div:nth-of-type(2) {
+    background-image: url("../img/cubes-bulding.png");
+}
+
+.projects_article .service-flex>div:nth-of-type(3) {
+    background-image: url("../img/pencil-bulding.png");
+}
+
+.ask_us_article {
+    padding: 60px;
+}
+
+.info-block:first-child,
+.info-block div {
+    font-family: UbuntuR;
+    margin-bottom: 46px;
+    color: #787A80;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.info-block>div {
+    font-size: 22px;
+}
+
+.info-block h1 {
+    font-size: 60px;
+    padding: 20px;
+}
+
+#player {
+    max-width: 1230px;
+    position: relative;
+    display: none;
+}
+
+#my-video{
+    max-width:1230px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+#player #mute-video{
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    background-image: url("../img/volume-disable.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    padding: 5px;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0%;
+     -webkit-filter: invert(100%);
+    filter: invert(100%);
+    transition: all 0.1s ease-in-out;
+}
+
+#player #mute-video:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#player #play-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    content: url("../img/play-button.png");
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#player #play-video.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.flex_core-values,
+.service-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.service-flex {
+    gap: 30px;
+}
+
+.flex_core-values>div {
+    width: 285px;
+    height: 188px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    margin: auto;
+}
+
+.flex_core-values div div {
+    color: #787A80;
+    font-size: 16px;
+    margin: auto;
+}
+
+.flex_core-values div h3 {
+    color: rgba(30, 33, 44, 1);
+}
+
+.core-values-splitter {
+    content: url('../img/core-values-splitter.png');
+    height: 180px;
+}
+
+.ask_us_article .send {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    height: 80px;
+}
+
+.ask_us_article .send div div {
+    color: #424551;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 8px;
+    font-family: UbuntuR;
+}
+
+.ask_us_article .send div input {
+    box-sizing: border-box;
+    height: 44px;
+    background: #F4F5F7;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.ask_us_article .send div>input {
+    height: 44px;
+    width: 260px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.ask_us_article .send div:last-of-type input {
+    width: 400px;
+}
+
+@media screen and (max-width: 685px) {
+    .ask_us_article .send div:last-of-type input {
+        width: 260px;
+    }
+    .ask_us_article .send>input {
+        width: 260px;
+    }
+    .ask_us_article div{
+        width: 260px;
+    }
+}
+
+.ask_us_article .send>input {
+    margin-top: 22px;
+    height: 44px;
+}
+
+
+
+.service-flex div img {
+    width: 52px;
+    height: 52px;
+
+}
+
+.service-flex div div {
+    font-size: 20px;
+    color: rgba(30, 33, 44, 1);
+    margin-top: 24px;
+    font-family: UbuntuB;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.service-flex div p {
+    font-size: 16px;
+    color: #787A80;
+}
+
+.service-flex>div {
+    width: 285px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E5E8ED;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 900px) {
+
+    .our-services-article .service-flex {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+.our-services-article,
+.support-logo-article {
+    margin-top: -80px;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-family: UbuntuB;
+    line-height: 24px;
+}
+
+.our-services-article div {
+    font-family: UbuntuR;
+    font-size: 27px;
+    color: #787A80;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 35px;
+}
+
+.our-services-article h1 {
+    line-height: 100%;
+}
+
+.our-services-article>div:first-of-type {
+    padding: 25px;
+}
+
+.ask_us_article {
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+}
+
+.ask_us_article h5 {
+    font-size: 28px;
+}
+
+.learn-more-flex {
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.learn-more-flex h5 {
+    color: rgba(30, 33, 44, 1);
+    font-size: 32px;
+}
+
+.explore-all-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: UbuntuB;
+}
+
+.explore-all-flex>div {
+    font-size: 32px;
+}
+
+.support-logo-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 100px;
+    padding-bottom: 150px;
+}
+
+.support-logo-flex img {
+    filter: grayscale(1);
+    transition: all 0.1s ease-in-out;
+}
+
+.support-logo-flex>img:hover {
+    filter: grayscale(0);
+}
+
+.support-logo-flex img {
+    width: 120px;
+    height: 64px;
+}
+
+.support-logo-article {
+    line-height: 60px;
+    background-color: rgba(244, 245, 246, 1);
+    margin-top: 70px;
+}
+
+.whats_client_saying>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1230px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.whats_client_saying div .left {
+    font-family: UbuntuB;
+    font-size: 46px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.whats_client_saying div .left img {
+    border-radius: 50%;
+    width: 72px;
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+
+.whats_client_saying div .left .message,
+.whats_client_saying div .left .company,
+.whats_client_saying div .left .name {
+    font-family: UbuntuR;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.whats_client_saying div .left .message {
+    color: rgba(66, 69, 81, 1);
+    margin-bottom: 24px;
+}
+
+.whats_client_saying div .left .company {
+    color: rgba(120, 122, 128, 1);
+    font-size: 14px;
+}
+
+.whats_client_saying div .left .name {
+    font-family: UbuntuB;
+    color: rgba(30, 33, 44, 1);
+    margin-bottom: 4px;
+}
+
+.whats_client_saying {
+    background-color: rgba(244, 245, 246, 1);
+    width: 100%;
+    height: 500px;
+    margin-bottom: 160px;
+}
+
+.whats_client_saying>div>div {
+    min-width: 450px;
+    width: 45%;
+}
+
+@media screen and (max-width: 1020px) {
+    .whats_client_saying>div>.right {
+        display: none;
+    }
+
+    .whats_client_saying .left {
+        margin: 0 auto;
+        min-width: 200px;
+        width: 100%;
+    }
+
+    .whats_client_saying>div {
+        width: 100%;
+    }
+
+}
+
+.some_facts {
+    max-width: 1230px;
+    margin: auto;
+}
+
+.facts-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin-top: 60px;
+    margin-bottom: 180px;
+}
+
+.some_facts>div:first-of-type {
+    display: block;
+    margin: auto;
+    font-family: UbuntuB;
+    font-size: 46px;
+    text-align: center;
+}
+
+.percent-bar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-image: conic-gradient(#f89828 90%, #fde0bf 10%);
+    transition:all 0.3s ease-in-out;
+}
+
+
+.facts-flex>div:nth-of-type(2)>div:first-child {
+    background-image: conic-gradient(#f52f6e 75%, #fcc1d3 25%);
+}
+
+.facts-flex>div:nth-of-type(3)>div:first-child {
+    background-image: conic-gradient(#5a87fc 80%, #cddbfe 20%);
+}
+
+.facts-flex>div:nth-of-type(4)>div:first-child {
+    background-image: conic-gradient(#03cea4 100%);
+}
+
+.percent-bar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.percent-bar:hover{
+    width:160px;
+    height: 160px;
+    margin:-5px;
+}
+
+.percent-bar:hover::after{
+    width:85%;
+    height: 85%;
+}
+
+.percent-bar div {
+    font-family: UbuntuB;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.facts-flex>div>div:last-of-type {
+    font-family: UbuntuR;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(30, 33, 44, 1)
+}
+
+.recent_news {
+    max-width: 1230px;
+    margin: auto;
+    margin-top: -30px;
+}
+
+.recent_news>div:first-of-type {
+    font-family: UbuntuB;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    margin: auto;
+    color: #1E212C;
+}
+
+.news-block {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    width: 495px;
+    height: 255px;
+}
+
+.news-block img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.news-block:first-of-type {
+    height: 540px;
+    width: 705px;
+}
+
+.news_blocks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: top;
+    gap: 30px;
+    height: 590px;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+    .news_blocks {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        height: auto;
+    }
+
+    .news-block {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-block:first-of-type {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.news-title,
+.news-info,
+.news-desc {
+    padding-left: 24px;
+}
+
+.news-title {
+
+    font-family: UbuntuB;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.news-desc {
+
+    font-family: UbuntuR;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+
+.news-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-family: UbuntuR;
+    color: rgba(120, 122, 128, 1);
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.news-info-splitter {
+    height: 12px;
+    width: 1px;
+    background-color: #787A80;
+}
+
+.news-comment-icon {
+    content: url('../img/news-comment-icon.png');
+    width: 16px;
+    height: 16px;
+}
+
+.form_art {
+    background-image: url("../img/form-background.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 826px;
+    margin-top: 120px;
+    padding-top: 80px;
+}
+
+.discuss_form, .login-form, .register-form {
+    box-sizing: border-box;
+    width: 495px;
+    background: #FFFFFF;
+    border: 1px solid #E5E8ED;
+    box-shadow: 0px 60px 80px -20px rgba(30, 33, 44, 0.16), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    border-radius: 4px;
+    margin-right: 25%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.login-form, .register-form{
+    gap:10px;
+}
+
+.discuss_form>div, .popup-footer{
+    font-family: UbuntuR;
+    font-size: 14px;
+    color: #424551;
+    margin: 20px auto 0 40px;
+    width: 80%;
+    display: block;
+}
+
+.discuss_form input:not([type='checkbox']):not([class='orange_button']),
+.popup-content input:not([type='checkbox']):not([class='orange_button']) {
+    background: #F4F5F7;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    max-width: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 12px 16px 12px 16px;
+
+}
+
+.discuss_form textarea {
+    background: #F4F5F7;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    resize: none;
+    max-width: 100%;
+    width: 80%;
+    margin: auto;
+    height: 66px;
+    padding: 12px 16px 12px 16px;
+    font-family: UbuntuR;
+}
+
+.discuss_form div:first-child, .popup-header{
+    font-family: UbuntuB;
+    font-size: 28px;
+    color: rgba(30, 33, 44, 1);
+    margin-top: 0px;
+    margin-bottom: 24px;
+    margin-top: 48px;
+    line-height: 150%;
+}
+
+.discuss_form label {
+    display: block;
+    font-family: UbuntuR;
+    font-size: 14px;
+    color: #424551;
+    margin: 20px 0 24px 40px;
+    line-height: 150%;
+
+}
+
+input[type='checkbox']:checked {
+    background-color: #FF5A30;
+}
+
+.discuss_form input[class='orange_button'] {
+    margin: 0 0 0 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 30px;
+    height: 44px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #1E212C;
+    padding-top: 80px;
+}
+
+.about_and_email {
+    max-width: 1230px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.email {
+    font-family: UbuntuR;
+    font-size: 16px;
+    line-height: 150%;
+    line-height: 24px;
+    width: 510px;
+}
+
+.email>div {
+    font-family: UbuntuB;
+    font-size: 36px;
+    color: #FFFFFF;
+
+    line-height: 150%;
+}
+
+.email input[type='email'] {
+    height: 44px;
+    width: 364px;
+    box-sizing: border-box;
+    font-family: UbuntuR;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px 0 0 4px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    padding: 12px 0 12px 16px;
+    /*opacity: 0.6;
+*/
+}
+
+.email input[type='email']:focus{
+    outline: none;
+}
+
+.email input[type='submit'] {
+    height: 44px;
+    width: 141px;
+    padding: 0;
+    border-radius: 0 4px 4px 0;
+    margin-left: -4px;
+    vertical-align: middle;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-left: 60px;
+    width: 60%;
+
+}
+
+.footer-logo,
+.social-buttons img {
+    margin-bottom: 24px;
+}
+
+.social-buttons img {
+    height: 20px;
+}
+
+.social-buttons img:hover {
+    opacity: 1;
+    transition: all 0.1s ease-in-out;
+}
+
+.about-text {
+    font-family: UbuntuR;
+    font-size: 16px;
+    line-height: 150%;
+    line-height: 24px;
+    flex: 2 1 100%;
+}
+
+.footer {
+    color: white;
+}
+
+.about {
+    font-size: 14px;
+    line-height: 150%;
+    width: 45%;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-buttons img,
+.about-text,
+.email .desc {
+    opacity: 0.6;
+}
+
+.email .desc {
+    font-size: 12px;
+    line-height: 150%;
+    margin-top: 16px;
+    width: 100%;
+    font-family: UbuntuR;
+}
+
+.address_and_links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: UbuntuR;
+    font-size: 16px;
+    max-width: 1230px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 1 !important;
+    transition: all 0.1s ease-in-out;
+}
+
+.address_and_links ul {
+    padding-inline-start: 0px;
+    margin: 10px;
+}
+
+.address_and_links li {
+    list-style-type: none;
+    line-height: 200%;
+}
+
+.address_and_links a {
+    opacity: 0.6;
+}
+
+.address_and_links li:first-of-type,
+.address_and_links:first-child {
+    font-family: UbuntuB;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.address_and_links span {
+    opacity: 0.6;
+}
+
+.address_and_links ul:last-of-type {
+    flex: 0 0 41%;
+}
+
+.copyright,
+.current_date {
+    font-family: UbuntuR;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.copyright span {
+    content: url('../img/copyright-heart.png');
+    width: 15px;
+    position: relative;
+    top: 2px;
+}
+
+.copyright-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1230px;
+    width: 90%;
+    margin: auto;
+}
+
+/*registration and signup panel*/
+.login_button{
+    color:#787A80;
+    border-color: #787A80;
+}
+
+
+.signup_button{
+    margin-right:20px;
+}
+
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+
+
+.popup-content{
+    font-size: 16px;
+    font-family: UbuntuR;;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    gap: 10px;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 20px; 
+    background-color: white;
+    z-index: 1;
+}
+.popup-content input{
+    width:80%;
+    padding-left: 32px;
+}
+
+.popup-content form{
+    box-shadow: none;
+    border: none;
+    width:100%;
+    
+}
+.popup-header{
+    width:100%;
+    line-height: 100%;
+}
+.popup-header img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    opacity:0.6;
+}
+.popup-header img:hover{
+    opacity:1;
+    transition: all 0.1s ease-in-out;
+}
+
+.popup-header div{
+    text-align: center;
+}
+
+.popup-footer{
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.login-form .orange_button,
+.register-form .orange_button{
+    margin: auto;
+    width: 50%;
+    transform: translate(0%, 0%);
+    margin-top:30px;
+}
+
+.login_button , .signup_button {
+    width:100px;
+    height:44px;
+    padding-left:0;
+    padding-right:0;
+}
+
+header a:hover,
+.popup a:hover{
+    color:black;
+}
+.user_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user_container button{
+    border-color:#787A80;
+    color: #787A80;
+}
+
+.user_image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    border: 1px solid #787A80;
+}
+
+.user_block{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.scroller .left, .scroller .right {
+    border-radius: 50%;
+    background-color: white;
+    width: 46px;
+    height: 46px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity:0.5;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-position: center;
+    background-size: 40%;
+}
+
+.scroller .left:hover,
+.scroller .right:hover {
+    opacity:1;
+    transition: all 0.1s ease-in-out;
+}
+
+.scroller .left{
+    left: 56px;
+    background-image: url("../img/left-icon.png");
+}
+.scroller .right{
+    right: 10px;
+    background-image: url("../img/right-icon.png");
+}
+
+#map{
+    max-width: 1230px;
+    height:600px;
+    border-radius: 4px;
+    margin: auto;
+}
+
+.we_are_there{
+    position: relative;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    padding-bottom: 60px;
+}
+
+.we_are_there > div:first-of-type{
+    font-size: 48px;
+    font-family: UbuntuB;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+#weather{
+    position: absolute;
+    top:20px;
+    width:300px;
+    overflow: hidden;
+    right:20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03) ;
+    z-index: 500;
+    font-family: UbuntuR;
+}
+
+.currency_convertor{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translate( 0, -50%);
+    font-size:20px;
+    width:230px;
+    height: 300px;
+    padding:15px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.currency_convertor input,
+.currency_convertor select{
+    background-color: #F4F5F7;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    font-family: UbuntuR;
+}
+
+    .currency_convertor input{
+    padding: 12px 16px 12px 16px;
+    width: 80%;
+}
+
+.currency_convertor select{
+    padding: 10px 12px 10px 12px;
+}
+.currency_convertor > div{
+    color:#787A80;
+    font-family: UbuntuR;
+    width: 100%;
+}
+
+.currency_convertor .control,
+.currency_convertor .input,
+.currency_convertor .output{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.currency_convertor .title{
+    font-family: UbuntuB;
+    font-size: 20px;
+    color: rgba(30, 33, 44, 1);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.currency_convertor .wait{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    font-family: UbuntuB;
+    font-size: 32px;
+    color:#787A80;
+    background-color: white;
+    z-index: 100;
+    border-radius: 10px;
+    display: none;
+}
+
+.currency_convertor button{
+    width: 40px;
+    height: 32px;
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .about_and_email {
+        margin: auto;
+
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .about,
+    .email {
+        width: 90%;
+    }
+
+    .social-buttons {
+        width: 30%
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .discuss_form {
+        margin: auto;
+    }
+    .scroller .left,
+    .scroller .right {
+        display: none;
+    }
+    .scroller_tabs {
+        display: none;
+    }
+    .scroller{
+        padding-bottom: 60px;
+    }
+    .currency_convertor{
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #player{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .scroller_header {
+        font-size: 48px;
+    }
+
+    .scroller_desc {
+        font-size: 16px;
+    }
+
+    .scroller_buttons div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .scroller_buttons {
+        padding: auto;
+    }
+
+    .explore-all-flex {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .explore-all-flex>div {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .form_art {
+        margin-top: 30px;
+    }
+
+    .scroller_header {
+        font-size: 38px;
+    }
+
+    .scroller_buttons {
+        padding: auto;
+    }
+
+    .scroller_buttons div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 10px;
+        width: 80%;
+    }
+
+    .info-block,
+    .some_facts {
+        padding: auto;
+    }
+
+    .send_request {
+        width: 100%;
+    }
+
+    .support-logo-article {
+        width: 80%;
+        margin: auto;
+    }
+    .call_action{
+        display: none;
+    } 
+}
+@media screen and (max-width: 650px) {
+    .date {
+        display: none;
+    }
+    .we_are_there{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        margin-top:20px;
+    }
+    
+    .discuss_form {
+        width: 100%;
+    }
+
+    .discuss_form input[type='text'] {
+        width: 100%;
+    }
+
+    .explore-all-flex {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .explore-all-flex>div {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .form_art {
+        margin-top: 30px;
+    }
+
+    .scroller_header {
+        font-size: 38px;
+    }
+
+    .scroller_buttons {
+        padding: auto;
+    }
+
+    .scroller_buttons div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 10px;
+        width: 80%;
+    }
+
+    .info-block,
+    .some_facts {
+        padding: auto;
+    }
+
+    .send_request {
+        width: 100%;
+    }
+
+    .support-logo-article {
+        width: 80%;
+        margin: auto;
+    }
+
+    .email input[type="submit"] {
+        width: 100%;
+        border-radius: 4px;
+        margin-left: 0;
+        display: block;
+    }
+
+    .email input[type="email"] {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .social-buttons {
+        margin-right: 30px;
+    }
+
+    .about {
+        justify-content: space-between;
+    }
+
+    .copyright {
+        text-align: center;
+        width: 90%;
+    }
+
+    .about_and_email {
+        flex-direction: column;
+        gap: 0px;
+        padding: 20px;
+    }
+
+    .about {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .social-buttons {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .logo{margin-top: 2px;
+    }
+}
+#fieldError{
+    font-family: UbuntuR;
+    width:80%;
+    padding: 0 16px 0 16px;
+    margin:auto;
+    font-size: 12px;
+    line-height: 150%;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.discuss_form #fieldError:last-of-type{
+    margin-bottom: 30px;
+}
+
+input:focus{
+border: 1px solid rgba(255, 90, 48, 0.4);
+box-shadow: 0px 80px 80px -20px rgba(255, 90, 48, 0.08), 0px 30px 24px -10px rgba(255, 90, 48, 0.05), 0px 12px 10px -6px rgba(255, 90, 48, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+border-radius: 4px;
+}

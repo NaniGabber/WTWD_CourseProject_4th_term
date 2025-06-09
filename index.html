@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Createx Construction Bureau</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="src/style/index.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="index.html"><img src="src/img/logo.png" alt=""></a>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="merch.html">Our merch</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <div class="call_action">
+            <img src="src/img/iphone.png" alt="">
+            <div class="nav_phone_text">
+                <div>Call us</div>
+                <div>(405) 555-0128</div>
+            </div>
+            <img src="src/img/chat.png" alt="">
+            <div class="nav_email_text">
+                <div>Talk to us</div>
+                <div>hello@createx.com</div>
+            </div>
+        </div>
+        <div class="login_register">
+            <button class="transparent_button login_button">Log In</button>
+            <button class="orange_button signup_button">Sign Up</button>
+        </div>
+    </header>
+    <!--LOGIN POPUP-->
+    <div class="popup" id="login_popup">
+
+        <div class="popup-content">
+            <div class="popup-header">
+                <div>Log In</div>
+                <img src="src/img/close.png" alt="" id="close_login_popup">
+            </div>
+            <form action="login" method="post" class="login-form">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Log In" class="orange_button">
+            </form>
+            <div class="popup-footer">
+                <div>Don't have an account? <a href="#" class="signup_footer">Sign Up</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------->
+    <!--REGISTER_POPUP-->
+    <div class="popup" id="register_popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <div>Sign Up</div>
+                <img src="src/img/close.png" alt="" id="close_register_popup">
+            </div>
+            <form action="register" method="post" class="register-form">
+                <input type="text" name="username" placeholder="Username">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Sign Up" class="orange_button">
+            </form>
+            <div class="popup-footer">
+                <div>Already have an account? <a href="#" class="login_footer">Log In</a></div>
+            </div>
+        </div>
+    </div>
+    <!------------------>
+
+    <main>
+        <article class="scroller">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="currency_convertor">
+                <div class="title">Currency Converter</div>
+                <div class="wait">Please, wait...</div>
+                <div class="date">
+                    <input id="date" type="date" onchange="handleDateChange(this.value)">
+                </div>
+                <div class="input">
+                    <input id="input_curr" type="text" oninput="handleCurrencyValueChange(this.value)" disabled="true">
+                    <select name="input_curr" id="input_curr_s" disabled="true"></select>
+                </div>
+                <div class="control">
+                    <select name="currencyMove" id="currency_move" disabled="true">
+
+                        <option value="buy">Покупка</option>
+                        <option value="sell">Продаж</option>
+                    </select>
+                    <button id="swap_button orange_button" onclick="swapCurrencyButton()">↑↓</button>
+                </div>
+                <div class="output">
+                    <input id="output_curr" type="text" disabled="true">
+                    <select name="output_curr" id="output_curr_s" disabled="true"></select>
+                </div>
+                <script src="src/js/exchange/exchange.js"></script>
+            </div>
+
+            <div class="scroller_header">
+                <div>
+                    <div>CREATE<span>X</span></div>
+                    <div> CONSTRUCTION</div>
+                </div>
+            </div>
+            <div class="scroller_desc">
+                <div>Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim
+                    vitae proinipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum
+                    felis.
+                </div>
+            </div>
+            <div class="scroller_buttons">
+                <div>
+                    <button class="transparent_button">LEARN MORE ABOUT US</button>
+                    <button class="orange_button">SUBMIT REQUEST</button>
+                </div>
+            </div>
+            <div class="scroller_tabs">
+                <div class="scroller_tab_item">
+                    <div class="scroller_tab_number">01</div>
+                    <div class="scroller_tab_rect"></div>
+                </div>
+                <div class="scroller_tab_item">
+                    <div class="scroller_tab_number">02</div>
+                    <div class="scroller_tab_rect"></div>
+                </div>
+                <div class="scroller_tab_item">
+                    <div class="scroller_tab_number">03</div>
+                    <div class="scroller_tab_rect"></div>
+                </div>
+                <div class="scroller_tab_item">
+                    <div class="scroller_tab_number">04</div>
+                    <div class="scroller_tab_rect"></div>
+                </div>
+            </div>
+
+        </article>
+        <article class="info-block video-block">
+            <h1>We are Createx Constuction Bureau</h1>
+            <div>We are rightfully considered to be the best constuction company in the USA</div>
+            <div id="player">
+                <video id="my-video" muted loop>
+                    <source src="src/videos/video.mp4" type="video/mp4" />
+                    <p class="no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that supports HTML5 video.
+                    </p>
+                </video>
+                <div id="mute-video"></div>
+                <div id="play-video"></div>
+                <script src="src/js/index.js"></script>
+            </div>
+        </article>
+        <article class="info-block core-values">
+            <h1>Our core values</h1>
+            <div>Our mission is to set the hightst standarts for construction sphere.</div>
+            <div class="flex_core-values">
+                <div>
+                    <img src="src/img/quality-icon.png" alt="Quality-icon">
+                    <div>Quality</div>
+                    <div>Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+                    </div>
+                </div>
+                <img class="core-values-splitter" alt="core-values-splitter">
+                <div>
+                    <img src="src/img/safety-icon.png" alt="safety-icon">
+                    <div>Safety</div>
+                    <div>Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est
+                        ea.
+                    </div>
+                </div>
+                <img class="core-values-splitter" alt="core-values-splitter">
+                <div>
+                    <img src="src/img/slippers-comfort-icon.png" alt="comfort-icon">
+                    <div>Comfort</div>
+                    <div>Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea
+                        ad.
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="ask_us_article">
+            <h5>Want to know more? Ask us a question:</h5>
+            <form action="send" class="send">
+                <div class="ask_us_name">
+                    <div>Name</div>
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="ask_us_phone">
+                    <div>Phone</div>
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <div class="ask_us_message">
+                    <div>Message</div>
+                    <input type="text" placeholder="Your message">
+                </div>
+                <input type="submit" value="SEND" class="orange_button">
+            </form>
+        </article>
+        <article class="our-services-article">
+            <h1>Our services</h1>
+            <div>Createx Construction Bureau is a constuction giant wit a full range of construction services.</div>
+            <div class="service-flex">
+                <div>
+                    <img src="src/img/constuction-icon.png" alt="constuction-icon">
+                    <div>Construction</div>
+                </div>
+                <div>
+                    <img src="src/img/project-development-icon.png" alt="project-development-icon">
+                    <div>Project Development</div>
+                </div>
+                <div>
+                    <img src="src/img/interior-design-logo.png" alt="interior-design-logo">
+                    <div>Interior Design</div>
+                </div>
+                <div>
+                    <img src="src/img/repairs-logo.png" alt="repairs-logo">
+                    <div>Repairs</div>
+                </div>
+            </div>
+            <div class="learn-more-flex service-flex">
+                <h5>Learn more about our services</h5>
+                <button class="orange_button">VIEW SERVICES</button>
+            </div>
+        </article>
+        <article class="projects_article">
+            <div>Browse of selected projects and learn more about our work</div>
+            <div class="service-flex">
+                <div>
+                    <div>
+                        <div>Red Finger Building</div>
+                        <div>Business Centers</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>Cubes Building</div>
+                        <div>Business Centers</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>The pencil Building</div>
+                        <div>Stores & Malls</div>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-all-flex">
+                <div>Explore all our works</div>
+                <button class="orange_button">VIEW PORTFOLIO</button>
+            </div>
+        </article>
+        <article class="support-logo-article">
+            <div>Supported by 12+ partners</div>
+            <div class="support-logo-flex">
+                <img src="src/img/InDepth-logo.webp" alt="indepth-consulting">
+                <img src="src/img/higher-fit-logo.png" alt="higher-fit-logo">
+                <img src="src/img/sentinal-consulting-logo.png" alt="sentinal-consulting-logo">
+                <img src="src/img/happy-home-logo.png" alt="happy-home-logo">
+                <img src="src/img/for-sale-logo.png" alt="for-sale-logo">
+                <img src="src/img/sunset-realty-logo.png" alt="sunset-realty-logo">
+
+            </div>
+        </article>
+        <article class="whats_client_saying">
+            <div>
+                <div class="left">
+                    <div>What our clients are saying</div>
+                    <img src="src/img/profile-logo.jfif" alt="">
+                    <div class="message">
+                        Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna
+                        cillum consequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.
+                    </div>
+                    <div class="name">Shawn Edwards</div>
+                    <div class="company">Position, Company name</div>
+                </div>
+                <div class="right">
+                    <img src="src/img/photo_clients.png" alt="photo_clients">
+                </div>
+            </div>
+        </article>
+        <article class="some_facts">
+            <div>Some facts and figures</div>
+            <div class="facts-flex">
+                <div>
+                    <div class="percent-bar">
+                        <div>98%</div>
+                    </div>
+
+                    <div>Totally satisfied clients</div>
+                </div>
+                <div>
+                    <div class="percent-bar">
+                        <div>20</div>
+                    </div>
+                    <div>Years of experience</div>
+                </div>
+                <div>
+                    <div class="percent-bar">
+                        <div>9452</div>
+                    </div>
+                    <div>Working hours spent</div>
+                </div>
+                <div>
+                    <div class="percent-bar">
+                        <div>100%</div>
+                    </div>
+                    <div>Succeeded projects</div>
+                </div>
+            </div>
+        </article>
+        <article class="recent_news">
+            <div>Recent news</div>
+            <div class="news_blocks">
+                <div class="news-block">
+                    <img src="src/img/news-1.jfif" alt="news-image">
+                    <div class="news-title">How to Build Climate Change-Resilient Infrastructure</div>
+                    <div class="news-info">
+                        <div>Industry News</div>
+                        <div class="news-info-splitter"></div>
+                        <div>June 24, 2020</div>
+                        <div class="news-info-splitter"></div>
+                        <div class="news-comment-icon"></div>
+                        <div class="news-comment-text">4 comments</div>
+                    </div>
+                    <div class="news-desc">Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus.
+                        Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh
+                        convallis...</div>
+                </div>
+                <div class="news-block">
+                    <img src="src/img/news-small-1.jfif" alt="news-image">
+                    <div class="news-title">How Constuction Can Help Itself</div>
+                    <div class="news-info">
+                        <div>Innovation</div>
+                        <div class="news-info-splitter"></div>
+                        <div>June 12, 2020</div>
+                        <div class="news-info-splitter"></div>
+                        <div class="news-comment-icon"></div>
+                        <div class="news-comment-text">No comments</div>
+                    </div>
+                </div>
+                <div class="news-block">
+                    <img src="src/img/news-small-2.jfif" alt="news-image">
+                    <div class="news-title">Types of Flooring Materials</div>
+                    <div class="news-info">
+                        <div>Company News</div>
+                        <div class="news-info-splitter"></div>
+                        <div>December 1, 2019</div>
+                        <div class="news-info-splitter"></div>
+                        <div class="news-comment-icon"></div>
+                        <div class="news-comment-text">No comments</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="explore-all-flex">
+                <div>Explore all our news posts</div>
+                <button class="orange_button">VIEW ALL NEWS</button>
+            </div>
+        </article>
+        <article class="we_are_there">
+            <div>We are there for you</div>
+            <div id="map">
+                <div id="weather">
+                    <div align="center">Please, set a place on the map to see the weather.</div>
+                </div>
+                <div id="edge-marker"></div>
+            </div>
+            </div>
+
+            </div>
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+            <script src="src/js/weather_map/weather.js"></script>
+        </article>
+
+        <article class="form_art">
+            <form action="send_request" class="discuss_form">
+                <div>A quick way to discuss details</div>
+                <div>Name*</div>
+                <input type="text" placeholder="Your name">
+                <div>Phone*</div>
+                <input type="text" placeholder="Your phone number">
+                <div>Email</div>
+                <input type="text" placeholder="Your working email">
+                <div>Message</div>
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+                <label for="checkbox"><input id="checkbox" type="checkbox"> I agree to receive communications
+                    from
+                    Createx Construction Bureau.</label>
+                <input type="submit" class="orange_button" value="SEND REQUEST">
+            </form>
+        </article>
+        <article class="footer">
+            <div class="about_and_email">
+                <div class="about">
+                    <div class="footer-logo">
+                        <img src="src/img/logo-dark.png" alt="logo">
+                    </div>
+                    <div class="social-buttons">
+                        <img src="src/img/whatsapp-logo.png" alt="whatsapp-logo">
+                        <img src="src/img/messenger-logo.png" alt="messenger-logo">
+                        <img src="src/img/facebook-logo.png" alt="facebook-logo">
+                        <img src="src/img/twitter-logo.png" alt="twitter-logo">
+                        <img src="src/img/youtube-logo.png" alt="youtube-logo">
+                    </div>
+                    <div class="about-text">Createx Construction Bureau has been successfully operating in the USA
+                        construction market since 2000. We are proud to offer you quality construction and exemplary
+                        service. Our mission is to set the highest standards for construction sphere.</div>
+                </div>
+                <form action="subscribe_footer" class="email">
+                    <div>Let`s stay in touch</div>
+                    <input type="email" , placeholder="Your email address">
+                    <input type="submit" class="orange_button" value="SUBSCRIBE">
+                    <div class="desc">
+                        *Subscribe to our newsletter to receive communications and early updates from Createx
+                        Construction Bureau.
+                    </div>
+                </form>
+            </div>
+            <div class="address_and_links">
+                <ul class="head_office">
+                    <li>HEAD OFFICE</li>
+                    <li>Address: <span>8502 Preston Rd. Inglewood, New York</span></li>
+                    <li>Call: <span>(405) 555-0128</span></li>
+                    <li>Email: <span>hello@createx.com</span></li>
+                </ul>
+                <ul>
+                    <li>WHO WE ARE</li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Available Positions</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <ul>
+                    <li>OUR EXPERIENCE</li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="merch.html">Our Merch</a></li>
+                </ul>
+            </div>
+            <div class="copyright-flex">
+                <div class="copyright">© All rights reserved. Made with <span></span></span> by Createx Studio</div>
+                <div class="current_date"></div>
+                <script src="src/js/clock/clock.js"></script>
+            </div>
+        </article>
+
+        <script src="src/js/auth/auth.js"></script>
+    </main>
+</body>
+
+</html>

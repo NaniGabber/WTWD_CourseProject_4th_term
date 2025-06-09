@@ -1,0 +1,325 @@
+.services_header {
+    background-color: rgba(244, 245, 246, 1);
+    background-image: url("../img/service/services-header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1000px;
+    width: 100%;
+    height: 600px;
+}
+
+.services_header_content {
+    font-family: UbuntuR;
+    font-size: 20px;
+    color: rgba(120, 122, 128, 1);
+    max-width: 1230px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+}
+
+.services_header_content div {
+    max-width: 600px;
+    margin: 10px 20px 10px 20px;
+    line-height: 150%;
+}
+
+.services_header_content div:first-of-type {
+    font-family: UbuntuB;
+    font-size: 72px;
+    color: rgba(30, 33, 44, 1);
+    width: 600px;
+}
+
+.services_content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1230px;
+    margin: auto;
+}
+
+.services_content_article {
+    width: 100%;
+    position: relative;
+    line-height: 150%;
+    overflow: hidden;
+}
+
+.services_content_article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -500px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/service/service-content-bg.png");
+    transform: rotate(60deg);
+    opacity: 0, 15;
+    z-index: -1;
+    background-position: right top;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+.block>div {
+    font-family: UbuntuR;
+    font-size: 16px;
+    color: rgba(120, 122, 128, 1);
+    width: 575px;
+    border-radius: 4px;
+}
+
+.img_1 {
+    content: url("../img/service/service-1.jfif");
+}
+
+.img_2 {
+    content: url("../img/service/service-2.jfif");
+}
+
+.img_3 {
+    content: url("../img/service/service-3.jfif");
+}
+
+.img_4 {
+    content: url("../img/service/service-4.jfif");
+}
+
+.img_1,
+.img_2,
+.img_3,
+.img_4 {
+    margin-top: 120px;
+    border-radius: 4px;
+}
+
+.block>div:first-of-type {
+    font-family: UbuntuB;
+    font-size: 32px;
+    color: rgba(30, 33, 44, 1);
+    margin-bottom: 24px;
+}
+
+.block button {
+    border-color: #ffa530;
+    color: #ffa530;
+    margin-top: 48px;
+}
+
+@media screen and (max-width: 1300px) {
+    .services_content {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .block div {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .block0 {
+        order: 1
+    }
+
+    .block1 {
+        order: 2
+    }
+
+    .block2 {
+        order: 4
+    }
+
+    .block3 {
+        order: 3
+    }
+
+    .block4 {
+        order: 5
+    }
+
+    .block5 {
+        order: 6
+    }
+
+    .block6 {
+        order: 8
+    }
+
+    .block7 {
+        order: 7
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .services_header {
+        background: none;
+        height: 300px;
+        align-items: center;
+    }
+
+    .services_header_content>div:first-child {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .services_content div {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .services_content button {
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 10%;
+    }
+}
+
+.tasker_article {
+    max-width: 1230px;
+    height: 700px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid rgba(154, 156, 165, 0.08);
+    border-radius: 10px;
+}
+
+.tasker_article>div:first-child {
+    font-family: UbuntuB;
+    font-size: 48px;
+    color: rgba(30, 33, 44, 1);
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.filter {
+    max-width: 800px;
+    margin: auto;
+}
+
+.tasker {
+    overflow: scroll;
+    max-width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    margin: auto;
+    padding: 0;
+
+}
+
+.tasker input,
+.tasker button {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.taskButton {
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    width: 80px;
+    height: 44px;
+    background-size: 40px;
+    vertical-align: top;
+    border-radius: 0 4px 4px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.taskInput,
+#filter-by-status-form,
+.task-date {
+    padding: 12px 16px 12px 16px;
+    width: 364px;
+    box-sizing: border-box;
+    font-family: UbuntuR;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px 0 0 4px;
+    background: #F4F5F7;
+    border: 1px solid #D7DADD;
+    color: rgba(66, 69, 81, 1);
+
+}
+
+#filter-by-status-form {
+    border-radius: 4px;
+}
+
+.addButton {
+    background-color: gray;
+    background-image: url("../img/tasker/add.png");
+}
+
+.removeButton {
+    background-image: url("../img/tasker/delete.png");
+}
+
+.doneButton {
+    background-image: url("../img/tasker/done.jpg");
+}
+
+.task-date {
+    display: none;
+    vertical-align: middle;
+    padding: 9px;
+    margin-left: 10px;
+    width: 320px;
+    text-align: center;
+    height: 44px;
+}
+
+@media screen and (max-width: 570px) {
+    .tasker_article {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .task * {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .filter {
+        display: block;
+        width: 100%;
+    }
+
+    #filter-by-status-form {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .task-date {
+        margin-bottom: 20px;
+    }
+
+    .task button,
+    .task input {
+        border-radius: 4px;
+    }
+
+    .addButton {
+        margin-bottom: 30px;
+    }
+}

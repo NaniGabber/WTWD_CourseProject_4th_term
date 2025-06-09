@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Merch - Createx Construction Bureau</title>
+    <link rel="stylesheet" href="src/style/index.css">
+    <link rel="stylesheet" href="src/style/merch.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="src/img/logo.png" alt=""></a>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="merch.html">Our merch</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <div class="call_action">
+            <img src="src/img/iphone.png" alt="">
+            <div class="nav_phone_text">
+                <div>Call us</div>
+                <div>(405) 555-0128</div>
+            </div>
+            <img src="src/img/chat.png" alt="">
+            <div class="nav_email_text">
+                <div>Talk to us</div>
+                <div>hello@createx.com</div>
+            </div>
+        </div>
+        <div class="login_register">
+            <button class="transparent_button login_button">Log In</button>
+            <button class="orange_button signup_button">Sign Up</button>
+        </div>
+        <div class="shop-icon">
+            <img src="src/img/merch/svg/shop-bag.svg" alt="">
+        </div>
+    </header>
+    <!-- we must to register-->
+    <div class="error-unlogined">You have to login or register to do this!
+    </div>
+
+    <!--CART-->
+    <div class="cart">
+        <div class="empty_cart">Your cart is empty!</div>
+        <div>Your Cart:</div>
+        <div class="cart-list">
+
+        </div>
+        <div class="total">
+            <div>Total:</div>
+            <div class="total-value"></div>
+        </div>
+        <div class="cart-buttons">
+            <button class="cart-clear-button transparent_button">Clear cart</button>
+            <button class="cart-buy-button orange_button">Buy</button>
+        </div>
+    </div>
+
+    <!--LOGIN POPUP-->
+    <div class="popup" id="login_popup">
+
+        <div class="popup-content">
+            <div class="popup-header">
+                <div>Log In</div>
+                <img src="src/img/close.png" alt="" id="close_login_popup">
+            </div>
+            <form action="login" method="post" class="login-form">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Log In" class="orange_button">
+            </form>
+            <div class="popup-footer">
+                <div>Don't have an account? <a href="#" class="signup_footer">Sign Up</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------->
+    <!--REGISTER_POPUP-->
+    <div class="popup" id="register_popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <div>Sign Up</div>
+                <img src="src/img/close.png" alt="" id="close_register_popup">
+            </div>
+            <form action="register" method="post" class="register-form">
+                <input type="text" name="username" placeholder="Username">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Sign Up" class="orange_button">
+            </form>
+            <div class="popup-footer">
+                <div>Already have an account? <a href="#" class="login_footer">Log In</a></div>
+            </div>
+        </div>
+    </div>
+    <!------------------>
+    <article class="top">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <div class="img_carousel">
+            <div class="carousel-cell">
+                <div class="image">
+                    <img src="src/img/merch/background1.jpg" alt="">
+                </div>
+                <div>Let`s check our new construction products made for proffesionals</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="image">
+                    <img src="src/img/merch/background2.jpg" alt="">
+                </div>
+                <div>We find out here what you need for building</div>
+            </div>
+            <div class="carousel-cell">
+                <div class="image">
+                    <img src="src/img/merch/background3.jpg" alt="">
+                </div>
+                <div>Our professionals are satisfied with the quality</div>
+            </div>
+        </div>
+    </article>
+    <article class="main">
+        <div>Let's check our new products</div>
+    </article>
+    <article class="items">
+
+    </article>
+
+    <article class="form_art">
+        <form action="send_request" class="discuss_form">
+            <div>A quick way to discuss details</div>
+            <div>Name*</div>
+            <input type="text" placeholder="Your name">
+            <div>Phone*</div>
+            <input type="text" placeholder="Your phone number">
+            <div>Email</div>
+            <input type="text" placeholder="Your working email">
+            <div>Message</div>
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+            <label for="checkbox"><input id="checkbox" type="checkbox"> I agree to receive communications
+                from
+                Createx Construction Bureau.</label>
+            <input type="submit" class="orange_button" value="SEND REQUEST">
+        </form>
+    </article>
+    <article class="footer">
+        <div class="about_and_email">
+            <div class="about">
+                <div class="footer-logo">
+                    <img src="src/img/logo-dark.png" alt="logo">
+                </div>
+                <div class="social-buttons">
+                    <img src="src/img/whatsapp-logo.png" alt="whatsapp-logo">
+                    <img src="src/img/messenger-logo.png" alt="messenger-logo">
+                    <img src="src/img/facebook-logo.png" alt="facebook-logo">
+                    <img src="src/img/twitter-logo.png" alt="twitter-logo">
+                    <img src="src/img/youtube-logo.png" alt="youtube-logo">
+                </div>
+                <div class="about-text">Createx Construction Bureau has been successfully operating in the USA
+                    construction market since 2000. We are proud to offer you quality construction and exemplary
+                    service. Our mission is to set the highest standards for construction sphere.</div>
+            </div>
+            <form action="subscribe_footer" class="email">
+                <div>Let`s stay in touch</div>
+                <input type="email" , placeholder="Your email address">
+                <input type="submit" class="orange_button" value="SUBSCRIBE">
+                <div class="desc">
+                    *Subscribe to our newsletter to receive communications and early updates from Createx
+                    Construction Bureau.
+                </div>
+            </form>
+        </div>
+        <div class="address_and_links">
+            <ul class="head_office">
+                <li>HEAD OFFICE</li>
+                <li>Address: <span>8502 Preston Rd. Inglewood, New York</span></li>
+                <li>Call: <span>(405) 555-0128</span></li>
+                <li>Email: <span>hello@createx.com</span></li>
+            </ul>
+            <ul>
+                <li>WHO WE ARE</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Available Positions</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <ul>
+                <li>OUR EXPERIENCE</li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="merch.html">Our Merch</a></li>
+            </ul>
+        </div>
+        <div class="copyright-flex">
+            <div class="copyright">© All rights reserved. Made with <span></span></span> by Createx Studio</div>
+            <div class="current_date"></div>
+            <script src="src/js/clock/clock.js"></script>
+        </div>
+    </article>
+    <script src="src/js/auth/auth.js"></script>
+    <script src="src/js/merch.js"></script>
+</body>
